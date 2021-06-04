@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  width: 100%;
+  margin: 0px auto;
+  background-color: #2f3336;
+  color: #efefef;
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article {
+  width: 100%;
+  padding: 30px;
+}
