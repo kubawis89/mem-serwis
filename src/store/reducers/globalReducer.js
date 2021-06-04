@@ -6,7 +6,7 @@ const memData = {
       upvotes: 15,
       downvotes: 5,
       favorite: true,
-      img: "/images/1.jpg",
+      img: "![](./images/1.jpg)",
     },
     {
       id: 2,
