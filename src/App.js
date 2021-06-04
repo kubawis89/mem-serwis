@@ -26,6 +26,9 @@ function App() {
           <Route exact path="/">
             <Redirect to="/memes" />
           </Route>
+          <Route exact path="/mem-serwis/">
+            <Redirect to="/memes" />
+          </Route>
           <Route exact path="/memes">
             <Memes />
           </Route>
