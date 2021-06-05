@@ -1,5 +1,11 @@
 import React from "react";
-import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
+import {
+  BrowserRouter,
+  Switch,
+  Route,
+  Redirect,
+  HashRouter,
+} from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import Header from "./components/Header/Header";
@@ -19,14 +25,11 @@ library.add(fab);
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <Header />
         <Navigation />
         <Switch>
           <Route exact path="/">
-            <Redirect to="/memes" />
-          </Route>
-          <Route exact path="/mem-serwis/">
             <Redirect to="/memes" />
           </Route>
           <Route exact path="/memes">
@@ -53,7 +56,7 @@ function App() {
         </Switch>
         <Socials />
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }

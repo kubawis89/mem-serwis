@@ -6,7 +6,7 @@ const memData = {
       upvotes: 15,
       downvotes: 5,
       favorite: true,
-      img: "![](./images/1.jpg)",
+      img: process.env.PUBLIC_URL + "/images/1.jpg",
     },
     {
       id: 2,
@@ -14,7 +14,7 @@ const memData = {
       upvotes: 4,
       downvotes: 3,
       favorite: true,
-      img: "/images/2.jpg",
+      img: process.env.PUBLIC_URL + "/images/2.jpg",
     },
     {
       id: 3,
@@ -22,7 +22,7 @@ const memData = {
       upvotes: 5,
       downvotes: 8,
       favorite: true,
-      img: "/images/3.jpg",
+      img: process.env.PUBLIC_URL + "/images/3.jpg",
     },
     {
       id: 4,
@@ -30,7 +30,7 @@ const memData = {
       upvotes: 5,
       downvotes: 0,
       favorite: false,
-      img: "/images/4.jpg",
+      img: process.env.PUBLIC_URL + "/images/4.jpg",
     },
     {
       id: 5,
@@ -38,7 +38,7 @@ const memData = {
       upvotes: 6,
       downvotes: 0,
       favorite: false,
-      img: "/images/5.jpg",
+      img: process.env.PUBLIC_URL + "/images/5.jpg",
     },
     {
       id: 6,
@@ -46,7 +46,7 @@ const memData = {
       upvotes: 4,
       downvotes: 0,
       favorite: false,
-      img: "/images/6.jpg",
+      img: process.env.PUBLIC_URL + "/images/6.jpg",
     },
     {
       id: 7,
@@ -54,7 +54,7 @@ const memData = {
       upvotes: 0,
       downvotes: 1,
       favorite: false,
-      img: "/images/7.jpg",
+      img: process.env.PUBLIC_URL + "/images/7.jpg",
     },
     {
       id: 8,
@@ -62,7 +62,7 @@ const memData = {
       upvotes: 0,
       downvotes: 2,
       favorite: false,
-      img: "/images/8.jpg",
+      img: process.env.PUBLIC_URL + "/images/8.jpg",
     },
     {
       id: 9,
@@ -70,7 +70,7 @@ const memData = {
       upvotes: 0,
       downvotes: 0,
       favorite: false,
-      img: "/images/9.jpg",
+      img: process.env.PUBLIC_URL + "/images/9.jpg",
     },
     {
       id: 10,
@@ -78,7 +78,7 @@ const memData = {
       upvotes: 0,
       downvotes: 0,
       favorite: false,
-      img: "/images/10.jpg",
+      img: process.env.PUBLIC_URL + "/images/10.jpg",
     },
     {
       id: 11,
@@ -86,7 +86,7 @@ const memData = {
       upvotes: 0,
       downvotes: 0,
       favorite: false,
-      img: "/images/11.jpg",
+      img: process.env.PUBLIC_URL + "/images/11.jpg",
     },
     {
       id: 12,
@@ -94,7 +94,7 @@ const memData = {
       upvotes: 0,
       downvotes: 0,
       favorite: false,
-      img: "/images/12.jpg",
+      img: process.env.PUBLIC_URL + "/images/12.jpg",
     },
     {
       id: 13,
@@ -102,7 +102,7 @@ const memData = {
       upvotes: 0,
       downvotes: 0,
       favorite: false,
-      img: "/images/13.jpg",
+      img: process.env.PUBLIC_URL + "/images/13.jpg",
     },
     {
       id: 14,
@@ -110,7 +110,7 @@ const memData = {
       upvotes: 0,
       downvotes: 0,
       favorite: false,
-      img: "/images/14.jpg",
+      img: process.env.PUBLIC_URL + "/images/14.jpg",
     },
     {
       id: 15,
@@ -118,7 +118,7 @@ const memData = {
       upvotes: 0,
       downvotes: 0,
       favorite: false,
-      img: "/images/15.jpg",
+      img: process.env.PUBLIC_URL + "/images/15.jpg",
     },
     {
       id: 16,
@@ -126,7 +126,7 @@ const memData = {
       upvotes: 0,
       downvotes: 0,
       favorite: false,
-      img: "/images/16.jpg",
+      img: process.env.PUBLIC_URL + "/images/16.jpg",
     },
     {
       id: 17,
@@ -134,7 +134,7 @@ const memData = {
       upvotes: 0,
       downvotes: 0,
       favorite: false,
-      img: "/images/17.jpg",
+      img: process.env.PUBLIC_URL + "/images/17.jpg",
     },
     {
       id: 18,
@@ -142,7 +142,7 @@ const memData = {
       upvotes: 10,
       downvotes: 0,
       favorite: true,
-      img: "/images/18.jpg",
+      img: process.env.PUBLIC_URL + "/images/18.jpg",
     },
     {
       id: 19,
@@ -150,7 +150,7 @@ const memData = {
       upvotes: 0,
       downvotes: 0,
       favorite: false,
-      img: "/images/19.jpg",
+      img: process.env.PUBLIC_URL + "/images/19.jpg",
     },
     {
       id: 20,
@@ -158,7 +158,7 @@ const memData = {
       upvotes: 0,
       downvotes: 0,
       favorite: false,
-      img: "/images/20.jpg",
+      img: process.env.PUBLIC_URL + "/images/20.jpg",
     },
   ],
 };

@@ -34,7 +34,11 @@ function PoorMemes() {
                   dispatch(addUpvote(thumbsUpId));
                 }}
               >
-                <img src="/images/up.png" width="30" alt="Upvotes" />
+                <img
+                  src={process.env.PUBLIC_URL + "/images/up.png"}
+                  width="30"
+                  alt="Upvotes"
+                />
               </button>
               {filteredMem.upvotes}
             </section>
@@ -47,7 +51,11 @@ function PoorMemes() {
                   dispatch(addDownvote(thumbsDownId));
                 }}
               >
-                <img src="/images/down.png" width="30" alt="Downvotes" />
+                <img
+                  src={process.env.PUBLIC_URL + "/images/down.png"}
+                  width="30"
+                  alt="Downvotes"
+                />
               </button>
               {filteredMem.downvotes}
             </section>
@@ -99,8 +107,8 @@ function PoorMemes() {
               <img
                 src={`${
                   filteredMem.favorite
-                    ? "/images/addedToFavorite.png"
-                    : "/images/addToFavorite.png"
+                    ? process.env.PUBLIC_URL + "/images/addedToFavorite.png"
+                    : process.env.PUBLIC_URL + "/images/addToFavorite.png"
                 }`}
                 width="30"
                 alt={`${
