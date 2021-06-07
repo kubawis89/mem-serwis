@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  BrowserRouter,
-  Switch,
-  Route,
-  Redirect,
-  HashRouter,
-} from "react-router-dom";
+import { Switch, Route, Redirect, HashRouter } from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import Header from "./components/Header/Header";

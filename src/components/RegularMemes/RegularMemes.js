@@ -128,6 +128,7 @@ function RegularMemes() {
 
   return (
     <main>
+      <div className="under320px">Go get some bigger screen!</div>
       <div>{regularMemList}</div>
     </main>
   );

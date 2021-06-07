@@ -125,6 +125,7 @@ function FavoriteMemes() {
 
   return (
     <main>
+      <div className="under320px">Go get some bigger screen!</div>
       <div>{favoriteMemList}</div>
     </main>
   );

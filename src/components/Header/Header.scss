@@ -3,14 +3,33 @@ header {
   background-color: #2f3336;
   color: #efefef;
   font-family: "Open Sans", sans-serif;
-  font-size: 17px;
+  min-width: 320px;
+  width: 100%;
   .logo {
-    font-size: 44px;
+    font-size: 38px;
     color: #ddd;
     text-align: center;
-    letter-spacing: 10px;
+    letter-spacing: 6px;
     padding: 30px 0 30px 0;
     font-weight: 700;
     display: block;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+@media only screen and (max-device-width: 319px) {
+  header {
+    margin: 0;
+    min-width: 100px;
+    .logo {
+      text-decoration: none;
+      font-size: 20px;
+      letter-spacing: 2px;
+      padding: 30px 0 30px 0;
+      font-weight: 400;
+      width: 100%;
+    }
   }
 }

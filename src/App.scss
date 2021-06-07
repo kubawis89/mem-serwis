@@ -14,15 +14,13 @@
   color: #efefef;
   font-family: "Open Sans", sans-serif;
   font-size: 17px;
-}
-
-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-article {
-  width: 100%;
-  padding: 30px;
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  article {
+    width: 100%;
+    padding: 30px;
+  }
 }

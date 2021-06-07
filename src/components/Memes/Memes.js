@@ -109,6 +109,7 @@ function Memes() {
 
   return (
     <main>
+      <div className="under320px">Go get some bigger screen!</div>
       <div>{memList}</div>
     </main>
   );

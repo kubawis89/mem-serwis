@@ -18,28 +18,28 @@ function Socials() {
           <FontAwesomeIcon
             className="iconGit"
             icon={["fab", "github"]}
-            size="4x"
+            size="3x"
           />
         </a>
         <a href="https://stackoverflow.com" rel="noreferrer" target="_blank">
           <FontAwesomeIcon
             className="iconStack"
             icon={["fab", "stack-overflow"]}
-            size="4x"
+            size="3x"
           />
         </a>
         <a href="https://www.javascript.com" rel="noreferrer" target="_blank">
           <FontAwesomeIcon
             className="iconJS"
             icon={["fab", "js-square"]}
-            size="4x"
+            size="3x"
           />
         </a>
         <a href="https://fontawesome.com" rel="noreferrer" target="_blank">
           <FontAwesomeIcon
             className="iconFont"
             icon={["fab", "font-awesome-flag"]}
-            size="4x"
+            size="3x"
           />
         </a>
       </SocialMedia>
