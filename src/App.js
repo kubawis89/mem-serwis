@@ -3,7 +3,6 @@ import { Switch, Route, Redirect, HashRouter } from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import Header from "./components/Header/Header";
-import Navigation from "./components/Navigation/Navigation";
 import Memes from "./components/Memes/Memes";
 import HotMemes from "./components/HotMemes/HotMemes";
 import RegularMemes from "./components/RegularMemes/RegularMemes";
@@ -14,6 +13,7 @@ import Socials from "./components/Socials/Socials";
 import Footer from "./components/Footer/Footer";
 import ErrorPage from "./components/ErrorPage/ErrorPage";
 import "./App.scss";
+import NavBarResponsive from "./components/Navigation/NavBarResponsive";
 library.add(fab);
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
     <div className="App">
       <HashRouter>
         <Header />
-        <Navigation />
+        <NavBarResponsive />
         <Switch>
           <Route exact path="/">
             <Redirect to="/memes" />

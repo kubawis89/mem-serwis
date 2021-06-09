@@ -1,4 +1,6 @@
 .topnav {
+  position: sticky;
+  top: -1px;
   background-color: #1c74b2;
   text-align: center;
   margin: 0;
@@ -29,7 +31,7 @@
       text-decoration: none;
     }
     li {
-      float: left;
+      display: inline-block;
       height: 40px;
       border-right: 1px dashed #0a2b42;
       width: 100px;
@@ -39,11 +41,6 @@
       }
     }
   }
-}
-
-.sticky {
-  position: sticky;
-  top: -1px;
 }
 
 @media only screen and (max-device-width: 319px) {

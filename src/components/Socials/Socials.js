@@ -1,7 +1,6 @@
 import React from "react";
 import { SocialsDiv, SocialMedia } from "./styledSocials";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./Socials.scss";
 
 function Socials() {
   return (
