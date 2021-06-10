@@ -1,0 +1,8 @@
+TO DO:
+1. GH Pages
+2. CSS
+3. AddMeme styling
+4. GlobalReducer map() instead of findIndex()
+5. Import CSS
+6. Additional Meme component
+7. One component ShowMemes instead of Hot/Regular/Poor/Favourite/Memes 
