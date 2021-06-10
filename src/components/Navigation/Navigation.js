@@ -6,7 +6,7 @@ function Navigation() {
   return (
     <nav className="topnav">
       <ul className="menu">
-        <NavLink to="/memes">
+        <NavLink to="/home">
           <li>Home</li>
         </NavLink>
         <NavLink to="/hot">

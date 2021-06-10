@@ -3,6 +3,7 @@ import styled from "styled-components";
 import NavLinks from "./NavLinks/NavLinks";
 import { useMediaQuery } from "react-responsive";
 import NarrowNavLinks from "./NavLinks/NarrowNavLinks";
+import { useLocation } from "react-router-dom";
 
 const NavContainer = styled.div`
   position: sticky !important;
@@ -57,21 +58,22 @@ const ActivePath = styled.p`
 function NavBarResponsive(props) {
   const isMobile = useMediaQuery({ maxWidth: "680px" });
 
-  const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click);
+  const [closeOrOpen, setCloseOrOpen] = useState(false);
 
-  const [activePath, setActivePath] = useState("Home");
+  const location = useLocation();
 
   return (
     <NavContainer>
       {isMobile && (
         <NarrowScreen>
           <ActiveLinkSection>
-            {!click && <ActivePath>{activePath}</ActivePath>}
+            {!closeOrOpen && (
+              <ActivePath>{location.pathname.substr(1)}</ActivePath>
+            )}
           </ActiveLinkSection>
-          <ResponsiveMenuSection onClick={handleClick}>
+          <ResponsiveMenuSection>
             <NarrowNavLinks
-              sendPath={(activePath) => setActivePath(activePath)}
+              sendToggle={(closeOrOpen) => setCloseOrOpen(closeOrOpen)}
             />
           </ResponsiveMenuSection>
         </NarrowScreen>

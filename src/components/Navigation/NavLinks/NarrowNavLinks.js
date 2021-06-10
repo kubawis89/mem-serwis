@@ -67,11 +67,11 @@ function NarrowNavLinks(props) {
       <MenuToggle isOpen={isOpen} toggle={() => setOpen(!isOpen)} />
       <div className={isOpen ? "nav-menu active" : "nav-menu"}>
         <LinkWrapper>
-          <NavLink to="/memes">
+          <NavLink to="/home">
             <LinkItem
               onClick={() => {
                 setOpen(!isOpen);
-                props.sendPath("Home");
+                props.sendToggle(!isOpen);
               }}
             >
               Home
@@ -81,7 +81,7 @@ function NarrowNavLinks(props) {
             <LinkItem
               onClick={() => {
                 setOpen(!isOpen);
-                props.sendPath("Hot");
+                props.sendToggle(!isOpen);
               }}
             >
               Hot
@@ -91,7 +91,7 @@ function NarrowNavLinks(props) {
             <LinkItem
               onClick={() => {
                 setOpen(!isOpen);
-                props.sendPath("Regular");
+                props.sendToggle(!isOpen);
               }}
             >
               Regular
@@ -101,7 +101,7 @@ function NarrowNavLinks(props) {
             <LinkItem
               onClick={() => {
                 setOpen(!isOpen);
-                props.sendPath("Poor");
+                props.sendToggle(!isOpen);
               }}
             >
               Poor
@@ -111,7 +111,7 @@ function NarrowNavLinks(props) {
             <LinkItem
               onClick={() => {
                 setOpen(!isOpen);
-                props.sendPath("Favorite");
+                props.sendToggle(!isOpen);
               }}
             >
               Favorite
@@ -121,7 +121,7 @@ function NarrowNavLinks(props) {
             <LinkItem
               onClick={() => {
                 setOpen(!isOpen);
-                props.sendPath("Add");
+                props.sendToggle(!isOpen);
               }}
             >
               Add
