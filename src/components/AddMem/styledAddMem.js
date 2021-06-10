@@ -7,6 +7,7 @@ export const AddContainer = styled.div`
   margin: 30px 0 0 0;
   border-radius: 5px;
   width: 600px;
+  min-height: calc(100% - 388px);
   h1 {
     font-size: 30px;
     font-weight: 400;

@@ -6,7 +6,6 @@ import {
   addDownvote,
   favoriteMem,
 } from "../../store/actions/globalActions";
-import "../Memes/Memes.scss";
 
 function RegularMemes() {
   const memDataFromState = useSelector((state) => state);

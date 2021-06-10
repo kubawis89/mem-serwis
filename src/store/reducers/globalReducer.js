@@ -166,7 +166,7 @@ const memData = {
 export const memReducer = (state = memData, action) => {
   switch (action.type) {
     case "ADD_UPVOTE": {
-      const index = state.memes.findIndex((mem) => mem.id === action.payload);
+      const index = state.memes.map((mem) => mem.id).indexOf(action.payload);
       const newArr = [...state.memes];
       newArr[index].upvotes++;
       return {
@@ -175,7 +175,7 @@ export const memReducer = (state = memData, action) => {
       };
     }
     case "ADD_DOWNVOTE": {
-      const index = state.memes.findIndex((mem) => mem.id === action.payload);
+      const index = state.memes.map((mem) => mem.id).indexOf(action.payload);
       const newArr = [...state.memes];
       newArr[index].downvotes++;
       return {
@@ -184,7 +184,7 @@ export const memReducer = (state = memData, action) => {
       };
     }
     case "ADD_REMOVE_FAVORITE": {
-      const index = state.memes.findIndex((mem) => mem.id === action.payload);
+      const index = state.memes.map((mem) => mem.id).indexOf(action.payload);
       const newArr = [...state.memes];
       newArr[index].favorite = !newArr[index].favorite;
       return {
