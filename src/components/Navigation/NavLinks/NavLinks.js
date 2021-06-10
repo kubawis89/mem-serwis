@@ -55,7 +55,7 @@ function NavLinks() {
   return (
     <LinkContainer>
       <LinkWrapper>
-        <NavLink to="/memes">
+        <NavLink to="/home">
           <LinkItem>Home</LinkItem>
         </NavLink>
         <NavLink to="/hot">
